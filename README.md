@@ -1,5 +1,3 @@
-# OCR
-[第一届西安交通大学人工智能实践大赛（2018AI实践大赛--图片文字识别）](http://competition.heils.cn/main.html)冠军
 
 
 # 模型结果
@@ -30,39 +28,7 @@ hard-mining
 将(8×64×2159)的概率沿着宽方向取最大值，得到(64×2159)的概率。
 沿着长方向一个个方格预测文字，然后连起来可得到一句完整的语句。
 
-存在问题：两个连续的文字无法重复检测
 
-下图是一个文字识别正确的示例：的长为半径作圆
-
-<img src="files/src/B1000_0.png" width=50%>
-
-下图是一个文字识别错误的示例：为10元；经粗加工后销售，每
-
-<img src="files/src/A81.png" width=50%>
-
-
-# 文件目录
-	ocr
-	|
-	|--code
-	|
-	|--files
-	|	|
-	|	|--train.csv
-	|
-	|--data
-		|
-		|--dataset
-		|	|
-		|	|--train
-		|	|
-		|	|--test
-		|
-		|--result
-		|	|
-		|	|--test_result.csv
-		|
-		|--images		此文件夹放置任何图片均可，我放的celebA数据集用作pretrain
 
 # 运行环境
 Ubuntu16.04, python2.7, CUDA9.0
